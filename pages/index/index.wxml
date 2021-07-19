@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="top">
+    <swiper indicator-dots="true" autoplay="true" interval="2000" duration="500">
+          <swiper-item>
+            <image src="./1.jpg" style="width:100%"></image>
+          </swiper-item>
+          <swiper-item>
+            <image src="./2.jpg" style="width:100%"></image>
+          </swiper-item>
+          <swiper-item>
+            <image src="./3.jpg" style="width:100%"></image>
+          </swiper-item>
+      </swiper>
+  </view>
+  <view class="cover">
+    <view class="cover-top">
+      <text>水处理方案查询</text>
+    </view>
+    <view class="cover-bottom">
+      <form style="width:100%;" bindsubmit="searchSubmit">
+        <view class="cover-bottom-item">
+          <text class="title">水　　量</text>
+          <input type="number" name="waterVolume" placeholder="请输入水量(单位:L)"/>
+        </view>
+        <view class="cover-bottom-item">
+          <text class="title">进水水质</text>
+          <input type="number" name="inputQuality" placeholder="请输入进水水质(单位:m3/h)"/>
+        </view>
+        <view class="cover-bottom-item">
+          <text class="title">出水水质</text>
+          <input type="number" name="outputQuality" placeholder="请输入出水水质(单位:m3/h)"/>
+        </view>
+        <button class="searchBtn" form-type="submit">
+          <text>查询</text>
+        </button>
+      </form>
+    </view>
+  </view>
+
+</view>
+
+

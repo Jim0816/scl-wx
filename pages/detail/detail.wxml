@@ -1,0 +1,99 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="top">
+    <view class="img">
+      <image src="{{design.url}}" style="width:100%;height:100%;"></image>
+    </view>
+    <view class="top-title">{{design.name}}</view>
+    <view class="top-other">
+      <text>发布时间: 2020-07-06</text>
+      <text style="margin-left:25rpx;">查询次数: 39</text>
+    </view>
+  </view>
+  <view class="bottom">
+    <!-- 模型详情信息 -->
+    <view class="bottom-1">
+      <view class="bottom-1-title">
+        <view class="bottom-1-title-logo"></view>
+        <text>方案参数</text>
+      </view>
+
+      <view class="bottom-1-item" style="margin-top:15rpx">
+        <view class="bottom-1-item-left">膜型号</view>
+        <view class="bottom-1-item-right">{{design.filmType}}</view>
+      </view>
+
+      <view class="bottom-1-item">
+        <view class="bottom-1-item-left">膜总数</view>
+        <view class="bottom-1-item-right">{{design.filmSum}}</view>
+      </view>
+
+      <view class="bottom-1-item">
+        <view class="bottom-1-item-left">回收率</view>
+        <view class="bottom-1-item-right">{{design.recycleRate * 100}}%</view>
+      </view>
+
+      <view class="bottom-1-item">
+        <view class="bottom-1-item-left">水箱体积</view>
+        <view class="bottom-1-item-right">{{design.waterVolume}} L</view>
+      </view>
+
+      <view class="bottom-1-item">
+        <view class="bottom-1-item-left">总进水</view>
+        <view class="bottom-1-item-right">{{design.waterVolume}} m³/h</view>
+      </view>
+
+      <view class="bottom-1-item">
+        <view class="bottom-1-item-left">增压泵</view>
+        <view class="bottom-1-item-right">2Nm³/min/套　反洗气量</view>
+      </view>
+
+      <view class="bottom-1-item">
+        <view class="bottom-1-item-left">CEB加酸</view>
+        <view class="bottom-1-item-right">HCL使用浓度　{{design.acidContent}}ppm投加量</view>
+      </view>
+
+      <view class="bottom-1-item">
+        <view class="bottom-1-item-left">CEB加碱</view>
+        <view class="bottom-1-item-right">NaOH使用浓度　{{design.alkaliContent}}ppm投加量</view>
+      </view>
+
+      <view class="bottom-1-item" style="border-bottom: 0.5rpx solid #797979;">
+        <view class="bottom-1-item-left">CEB加氧化剂</view>
+        <view class="bottom-1-item-right">NaCIO使用浓度　{{design.oxidizingAgentContent}}ppm投加量</view>
+      </view>
+
+    </view>
+
+    <!-- 用户讨论信息 -->
+    <view class="bottom-2">
+      <view class="bottom-2-title">
+        <view class="bottom-2-title-logo"></view>
+        <text>方案交流</text>
+      </view>
+
+      <view class="bottom-2-item" wx:for="{{design.comment}}" wx:key="index" data-index="{{index}}">
+        <view class="bottom-2-item-top">
+          <text>{{item.time}}</text>
+          <text>{{item.wxName}}</text>
+        </view>
+        <view class="bottom-2-item-mid">{{item.comment}}</view>
+        <view class="bottom-2-item-bottom">
+          <view class="bottom-2-item-bottom-label">　xxx污水处理厂　</view>
+        </view>
+      </view>
+      <myDialog show="{{myDialogShow}}" title="方案评价">
+        <view slot="content" class="myDialog-content">
+          <view class="myDialog-content-text">
+            <textarea id="comment" placeholder="请输入您的意见..."  value="{{comment}}" bindinput="textAreaInput" placeholder-style="color:#999999;"  />
+          </view>
+          <view class="myDialog-content-btn">
+            <view class="bottom-2-comment" bindtap="submitComment" >提交</view>
+          </view>
+        </view>
+      </myDialog>
+      <view class="bottom-2-comment" bindtap="showModal">评价</view>
+      <view style="float:left;width:100%;height:60rpx;"></view>
+    </view>
+  </view>
+</view>

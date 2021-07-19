@@ -1,0 +1,36 @@
+<!--pages/designList.wxml-->
+<view class="container">
+  <view class="top">
+    <view class="search-view">
+      <view class="logo">
+        <image src="./search.png" style="width:100%;height:100%;"></image>
+      </view>
+      <input type="text" placeholder="输入方案名关键字"/> 
+    </view>
+    <view class="top-bottom">
+      <text style="float:right;">高级检索</text>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="design-view" wx:for="{{resultList}}" wx:key="index" data-index="{{index}}" bindtap="goDetailPage">
+      <view class="design-view-left">
+        <view class="design-view-left-title">{{item.name}}</view>
+        <view class="design-view-left-label">
+          <view class="label-1" style="background-color:#E7EAFF;color:#3E7CFF;">水量: {{item.waterVolume}}</view>
+          <view class="label-2" style="margin-left:15rpx;background-color:#DFFFDF;color:#67CD67;">进水: {{item.inputQuality}}m³/h</view>
+          <view class="label-3" style="margin-left:15rpx;background-color:#FFF7E5;color:#FEBD01;">出水: {{item.outputQuality}}m³/h</view>
+        </view>
+        <view class="design-view-left-bottom">
+          <text>发布时间: 2020-07-06</text>
+          <text style="margin-left:25rpx;">查询次数: 39</text>
+        </view>
+      </view>
+      <view class="design-view-right">
+        <image src="{{item.url}}" style="width:100%;height:100%;"></image>
+      </view>
+    </view>
+
+
+  </view>
+  
+</view>

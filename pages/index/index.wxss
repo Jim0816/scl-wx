@@ -1,0 +1,123 @@
+/**index.wxss**/
+page {
+  background-color: #F8F8F8;
+}
+
+.top{
+  margin-top: 0rpx;
+  width:100%;
+  height: 460rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 40rpx;
+  letter-spacing: 5rpx;
+  font-weight: bold;
+}
+
+.top > swiper{
+  width: 100%;
+  height: 100%;
+}
+
+.cover{
+  position: absolute;
+  top:350rpx;
+  left: 3%;
+  width: 94%;
+  height: 560rpx;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+}
+
+.cover-top{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #DCDCDC;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.cover-top > text {
+  color:#333333;
+  font-size: 35rpx;
+  font-weight: bold;
+  letter-spacing: 5rpx;
+}
+
+.cover-bottom{
+  margin-top: 10rpx;
+  margin-left: 3%;
+  width: 94%;
+  height: 560rpx;
+}
+
+.cover-bottom-item{
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 4rpx solid #F8F8F8;
+}
+
+.title{
+  margin-top: 40rpx;
+  color:#333333;
+  font-size: 35rpx;
+  font-weight: bold;
+  letter-spacing: 1rpx;
+}
+
+.cover-bottom-item > input{
+  margin-left: 30rpx;
+  width: 70%;
+  height: 50rpx;
+  margin-top: 40rpx;
+}
+
+.searchBtn{
+  margin-top: 35rpx;
+  background-color:#3E7CFF;
+  text-align: center;
+  height: 80rpx;
+  margin-left: 10%;
+  border-radius: 10rpx;
+}
+
+.searchBtn > text{
+  color: #ffffff;
+  line-height: 50rpx;
+  letter-spacing: 8rpx;
+}
+
+.bottom{
+  width:90%;
+  height: 500rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-view{
+  width:100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #F8F8F8;
+  border-radius: 15rpx;
+}
+
+.input{
+  background-color: #ffffff;
+  width: 70%;
+}

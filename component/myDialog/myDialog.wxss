@@ -1,0 +1,23 @@
+.content{
+  position: fixed;
+}
+
+.title-view{
+  float: left;
+  margin-left: 5%;
+  width: 90%;
+  height: 70rpx;
+  border-bottom: 3rpx solid #f8f8f8;
+  text-align: center;
+  font-size: 35rpx;
+  color: #333333;
+  font-weight: bold;
+  letter-spacing: 4rpx;
+  line-height: 65rpx;
+}
+
+.slot{
+  float: left;
+  margin-left: 5%;
+  width: 90%;
+}

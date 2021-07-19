@@ -1,0 +1,219 @@
+/* pages/detail/detail.wxss */
+.top{
+  width:100%;
+  height: 900rpx;
+}
+
+.img{
+  float: left;
+  margin-top: 0rpx;
+  width:100%;
+  height: 750rpx;
+}
+
+.top-title{
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 2%;
+  width:96%;
+  min-height: 50rpx;
+  font-weight: bolder;
+}
+
+.top-other{
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 2%;
+  width:96%;
+  font-size: 25rpx;
+  min-height: 50rpx;
+  color: #999999;
+}
+
+.bottom{
+  width:100%;
+}
+
+.bottom-1{
+  float: left;
+  margin-left: 2%;
+  width:96%;
+}
+
+.bottom-1-title{
+  float: left;
+  margin-left: 1%;
+  width:98%;
+  height: 40rpx;
+  background-color: #F8F8F8;
+}
+
+.bottom-1-title-logo{
+  float: left;
+  margin-left: 0;
+  width:6rpx;
+  height: 40rpx;
+  background-color: #3E7CFF;
+}
+
+.bottom-1-title > text{
+  margin-top: 0;
+  margin-left: 15rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.bottom-1-item{
+  float: left;
+  margin-left: 1%;
+  width:97.5%;
+  height: 50rpx;
+  border-top: 0.5rpx solid #797979;
+  border-left: 0.5rpx solid #797979;
+  border-right: 0.5rpx solid #797979;
+  text-align: center;
+  font-size: 25rpx;
+  color:#797979;
+  line-height: 50rpx;
+}
+
+.bottom-1-item-left{
+  float: left;
+  margin-left: 0rpx;
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid #797979;
+}
+
+.bottom-1-item-right{
+  float: left;
+  margin-left: 0rpx;
+  width: 69%;
+  height: 100%;
+}
+
+.bottom-2{
+  float: left;
+  margin-top: 20rpx;
+  margin-left: 2%;
+  width:96%;
+  min-height: 400rpx;
+}
+
+.bottom-2-title{
+  float: left;
+  margin-left: 1%;
+  width:98%;
+  height: 40rpx;
+  background-color: #F8F8F8;
+}
+
+.bottom-2-title-logo{
+  float: left;
+  margin-left: 0;
+  width:6rpx;
+  height: 40rpx;
+  background-color: #3E7CFF;
+}
+
+.bottom-2-title > text{
+  margin-top: 0;
+  margin-left: 15rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.bottom-2-item{
+  float: left;
+  margin-top: 15rpx;
+  margin-left: 1%;
+  width: 98%;
+  min-height: 140rpx;
+  border-top: 2rpx solid #F8F8F8;
+  border-bottom: 2rpx solid #F8F8F8;
+}
+
+.bottom-2-item-top{
+  float: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  height: 40rpx;
+  color: #C5C5C5;
+  font-size: 25rpx;
+}
+
+.bottom-2-item-mid{
+  float: left;
+  width: 100%;
+  min-height: 60rpx;
+  color: #333333;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.bottom-2-item-bottom{
+  float: left;
+  width: 100%;
+  height: 30rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.bottom-2-item-bottom-label{
+  float: left;
+  height: 30rpx;
+  background-color: #3E7CFF;
+  text-align: center;
+  font-size: 18rpx;
+  color:#ffffff;
+  border-radius: 15rpx;
+  line-height: 30rpx;
+}
+
+.bottom-2-comment{
+  float: left;
+  margin-left: 30%;
+  margin-top: 30rpx;
+  width:40%;
+  height: 70rpx;
+  background-color: #3E7CFF;
+  text-align: center;
+  font-size: 32rpx;
+  color:#ffffff;
+  border-radius: 15rpx;
+  line-height: 70rpx;
+  letter-spacing: 4rpx;
+  font-weight: bold;
+}
+
+.myDialog-content{
+  float: left;
+  width: 100%;
+  height: 320rpx;
+}
+
+.myDialog-content-text{
+  float: left;
+  width: 100%;
+  height: 200rpx;
+}
+
+.myDialog-content-text > textarea{
+  margin-top: 20rpx;
+  width:100%;
+  height: 180rpx;
+  font-size: 30rpx;
+  font-weight: 350;
+  text-align:left
+  
+}
+.myDialog-content-btn{
+  float: left;
+  margin-top: 30rpx;
+  width: 100%;
+  height: 70rpx;
+}
